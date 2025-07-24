@@ -9,10 +9,10 @@ namespace CheckForLeapYear.Managers
             int year = model.GetYear();
             if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
             {
-                isLeapYear = true;
+                isLeapYear = true; // bool value
             }
             LeapYearResultModel resObj = new LeapYearResultModel(isLeapYear);
-            return resObj.GetResult();
+            return resObj.GetResult(); // returning result
         }
     }
 }
